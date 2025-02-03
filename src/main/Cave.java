@@ -24,7 +24,7 @@ public class Cave implements Serializable {
 
     public void listMonsters() {
         if (monsters.isEmpty()) {
-            System.out.println("Luolassa ei ole hirviöitä.");
+            System.out.println("Luola on tyhjä.");
             return;
         }
         
@@ -47,7 +47,12 @@ public class Cave implements Serializable {
         if (target.getHealth() <= 0) {
             monsters.remove(choice - 1);
         }
+
+        if (monsters.isEmpty()) {
+            System.out.println("Luola on tyhjä.");
+        }
     }
+
     public int getMonsterCount() {
         return monsters.size();
     }
