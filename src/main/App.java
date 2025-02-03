@@ -48,7 +48,7 @@ public class App {
                     break;
 
                 case 4:
-                    System.out.println("Anna tiedoston nimi, johon peli tallennetaan:");
+                    System.out.println("Anna tiedoston nimi, johon peli tallentaa:");
                     Cave.saveGame(cave, scanner.nextLine());
                     System.out.println("Peli tallennettiin tiedostoon save.game.");
                     break;
